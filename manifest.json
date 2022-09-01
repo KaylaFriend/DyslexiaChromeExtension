@@ -1,0 +1,6 @@
+{
+    "name": "Dyslexia Support Extension",
+    "description": "Extension that supports font, background color, and PDF font changing.",
+    "version": "1.0",
+    "manifest_version": 3
+}
