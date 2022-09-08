@@ -1,6 +1,32 @@
+/*Regular Font*/
+/*src: url(‘chrome-extension://__MSG_@@extension_id__/fonts/OpenDyslexic-Regular.otf);*/
 @font-face {
-    font-family: ‘opendyslexic’;
+    font-family: ‘opendyslexic-r’;
     font-style: normal;
     font-weight: normal;
-    src:"../fonts/OpenDyslexic-Regular.otf";
+    src:url('../fonts/OpenDyslexic-Regular.otf') format('otf')
+}
+
+/*Bold Font*/
+@font-face {
+    font-family: ‘opendyslexic-b’;
+    font-style: normal;
+    font-weight: normal;
+    src: url(‘chrome-extension://__MSG_@@extension_id__/fonts/OpenDyslexic-Bold.otf);
+}
+
+/*Bold Italic Font*/
+@font-face {
+    font-family: ‘opendyslexic-bi’;
+    font-style: normal;
+    font-weight: normal;
+    src: url(‘chrome-extension://__MSG_@@extension_id__/fonts/OpenDyslexic-BoldItalic.otf);
+}
+
+/*Italic Font*/
+@font-face {
+    font-family: ‘opendyslexic-i’;
+    font-style: normal;
+    font-weight: normal;
+    src: url(‘chrome-extension://__MSG_@@extension_id__/fonts/OpenDyslexic-Italic.otf);
 }

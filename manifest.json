@@ -8,6 +8,7 @@
     },
     "permissions": ["storage", "activeTab", "scripting"],
     "action": {
+        "default_title": "Dyslexia Friendly Font and Background",
         "default_popup": "popup.html",
         "default_icon": {
             "16": "/images/get_started16.png",
