@@ -5,9 +5,16 @@
     <link rel="stylesheet" href="/css/button.css">
   </head>
   <body>
-    <h3>Choose background color!</h3>
+    <h3 style="font-family:opendyslexic">Choose background color!</h3>
     <button id="changeColor"></button>
     <script src="/js/popup.js"></script>
-    <h3>Choose OpenDyslexic font!</h3>
+    <h3 style="font-family:opendyslexic">Choose an OpenDyslexic font!</h3>
+    <select name="font" id="font" onchange="changePageFont();">
+      <option value="reg">Regular</option>
+      <option value="bold">Bold</option>
+      <option value="italic">Italic</option>
+      <option value="bi">Bold-Italic</option>
+    </select>
+    <button id="changeFont"></button>
   </body>
 </html>

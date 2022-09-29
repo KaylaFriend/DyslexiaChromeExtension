@@ -22,3 +22,21 @@ changeColor.addEventListener("click", async () => {
       document.body.style.backgroundColor = color;
     });
   }
+
+  //Change Font Code
+  let changeFont = document.getElementById("changeFont");
+
+  changeFont.addEventListener("click", async () => {
+    let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+  
+  chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      func: setPageFont,
+    });
+  });
+
+  function setPageFont() {
+    chrome.fontSettings.setFont(
+      { genericFamily: 'sansserif', script: 'Zyyy', fontId: 'MS PGothic' }
+    );
+  }

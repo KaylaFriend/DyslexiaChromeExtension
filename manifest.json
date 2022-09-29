@@ -6,7 +6,7 @@
     "background": {
         "service_worker": "/js/background.js"
     },
-    "permissions": ["storage", "activeTab", "scripting"],
+    "permissions": ["storage", "activeTab", "scripting", "fontSettings"],
     "action": {
         "default_title": "Dyslexia Friendly Font and Background",
         "default_popup": "popup.html",

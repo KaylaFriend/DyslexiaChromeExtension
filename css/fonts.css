@@ -1,32 +1,27 @@
 /*Regular Font*/
-/*src: url(‘chrome-extension://__MSG_@@extension_id__/fonts/OpenDyslexic-Regular.otf);*/
 @font-face {
-    font-family: ‘opendyslexic-r’;
-    font-style: normal;
-    font-weight: normal;
-    src:url('../fonts/OpenDyslexic-Regular.otf') format('otf')
+    font-family: ‘opendyslexic’;
+    src:    url('../fonts/OpenDyslexic-Regular.woff2') format('woff2'),
+            url('../fonts/OpenDyslexic-Regular.woff') format('woff');
 }
 
 /*Bold Font*/
 @font-face {
-    font-family: ‘opendyslexic-b’;
-    font-style: normal;
-    font-weight: normal;
-    src: url(‘chrome-extension://__MSG_@@extension_id__/fonts/OpenDyslexic-Bold.otf);
+    font-family: ‘opendyslexic’;
+    src:    url('../fonts/OpenDyslexic-Bold.woff2') format('woff2'),
+            url('../fonts/OpenDyslexic-Bold.woff') format('woff');
 }
 
 /*Bold Italic Font*/
 @font-face {
-    font-family: ‘opendyslexic-bi’;
-    font-style: normal;
-    font-weight: normal;
-    src: url(‘chrome-extension://__MSG_@@extension_id__/fonts/OpenDyslexic-BoldItalic.otf);
+    font-family: ‘opendyslexic’;
+    src:    url('../fonts/OpenDyslexic-BoldItalic.woff2') format('woff2'),
+            url('../fonts/OpenDyslexic-BoldItalic.woff') format('woff');
 }
 
 /*Italic Font*/
 @font-face {
-    font-family: ‘opendyslexic-i’;
-    font-style: normal;
-    font-weight: normal;
-    src: url(‘chrome-extension://__MSG_@@extension_id__/fonts/OpenDyslexic-Italic.otf);
+    font-family: ‘opendyslexic’;
+    src:    url('../fonts/OpenDyslexic-Italic.woff2') format('woff2'),
+            url('../fonts/OpenDyslexic-Italic.woff') format('woff');
 }
