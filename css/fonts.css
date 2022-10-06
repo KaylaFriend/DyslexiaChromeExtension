@@ -3,6 +3,8 @@
     font-family: ‘opendyslexic’;
     src:    url('../fonts/OpenDyslexic-Regular.woff2') format('woff2'),
             url('../fonts/OpenDyslexic-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
 }
 
 /*Bold Font*/
@@ -10,6 +12,8 @@
     font-family: ‘opendyslexic’;
     src:    url('../fonts/OpenDyslexic-Bold.woff2') format('woff2'),
             url('../fonts/OpenDyslexic-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: bold;
 }
 
 /*Bold Italic Font*/
@@ -17,6 +21,8 @@
     font-family: ‘opendyslexic’;
     src:    url('../fonts/OpenDyslexic-BoldItalic.woff2') format('woff2'),
             url('../fonts/OpenDyslexic-BoldItalic.woff') format('woff');
+    font-style: italic;
+    font-weight: bold;
 }
 
 /*Italic Font*/
@@ -24,4 +30,6 @@
     font-family: ‘opendyslexic’;
     src:    url('../fonts/OpenDyslexic-Italic.woff2') format('woff2'),
             url('../fonts/OpenDyslexic-Italic.woff') format('woff');
+    font-style: italic;
+    font-weight: normal;
 }

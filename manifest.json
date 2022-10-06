@@ -6,7 +6,7 @@
     "background": {
         "service_worker": "/js/background.js"
     },
-    "permissions": ["storage", "activeTab", "scripting", "fontSettings"],
+    "permissions": ["storage", "activeTab", "scripting", "fontSettings", "tabs"],
     "action": {
         "default_title": "Dyslexia Friendly Font and Background",
         "default_popup": "popup.html",
@@ -23,5 +23,13 @@
         "48": "/images/get_started48.png",
         "128": "/images/get_started128.png"
     },
-    "options_page": "options.html"
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+         "matches": ["https://*/*"],
+         "all_frames": true,
+         "css": ["/css/fonts.css"],
+         "js": ["/js/contentScript.js"]
+        }
+    ]
 }
