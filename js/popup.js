@@ -28,8 +28,7 @@ changeColor.addEventListener("click", async () => {
 
   changeFont.addEventListener("click", async () => {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-  
-  chrome.scripting.executeScript({
+    chrome.scripting.executeScript({
       target: { tabId: tab.id },
       func: setPageFont,
     });
@@ -37,6 +36,6 @@ changeColor.addEventListener("click", async () => {
 
   function setPageFont() {
     chrome.fontSettings.setFont(
-      { genericFamily: 'sansserif', script: 'Zyyy', fontId: 'MS PGothic' }
+      { genericFamily: 'sansserif', script: 'Jpan', fontId: 'MS PGothic' }
     );
   }

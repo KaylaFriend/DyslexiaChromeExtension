@@ -15,8 +15,13 @@
       <option value="italic">Italic</option>
       <option value="bi">Bold-Italic</option>
     </select>
-    <button id="changeFont"></button>
-    <input type="text" id="fontColor"/>
-    <input type="submit" id="btnChange" value="Change"/>
+    <input type="submit" id="fontBtn" value="submit"/>
+    <select name="fontColor" id="fontColor" onchange="changeFontColor();">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
+    </select>
+    <input type="submit" id="btnChange" value="submit"/>
   </body>
 </html>
