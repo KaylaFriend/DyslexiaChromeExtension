@@ -1,3 +1,9 @@
-document.body.style.fontFamily = 'opendyslexic';
-document.body.style.fontStyle = 'normal';
-document.body.style.fontWeight = 'normal';
+let b = document.body.style;
+
+//Change font
+b.fontFamily = 'opendyslexic';
+b.fontStyle = 'normal';
+b.fontWeight = 'normal';
+
+//Change font color
+b.color = 'red';
