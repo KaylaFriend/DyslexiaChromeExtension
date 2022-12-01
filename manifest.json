@@ -1,6 +1,6 @@
 {
     "name": "Work Easy",
-    "description": "Extension that supports font, background color, and PDF font changing.",
+    "description": "Extension that supports font, font color, and background color changing.",
     "version": "1.0",
     "manifest_version": 3,
     "background": {
