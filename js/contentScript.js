@@ -1,25 +1,47 @@
-b = document.body.style;
-//document.body.style.color = 'red';
+const b = document.body.style;
+
+//b.fontStyle = textF.style;
+
 //Change font
-b.fontFamily = 'opendyslexic';
-b.fontStyle = 'normal';
-//b.fontStyle = 'italic';
-b.fontWeight = 'normal';
+var textF = null;
+if (textF == null) {
+    textF = 'normal';
+}
+b.fontStyle = textF;
 
+var selectF = document.getElementById('font');
+if (selectF) {
+    selectF.addEventListener("click", getOptionF);
+}
+
+function getOptionF() {
+    var textF = selectF.options[selectF.selectedIndex].text;
+    b.fontStyle = textF;
+}
+
+function getFont(f) {
+    b.fontStyle = f;
+}
 //Change font color
-//b.color = 'red';
-b.color = 'blue';
-c = 'black';
-
-var fontC = document.getElementById("fontC");
-if (fontC) {
-    fontC.addEventListener("click", getOption);
+var select = document.getElementById('fontColor');
+if (select) {
+    select.addEventListener("click", getOption);
 }
 
 function getOption() {
-    c = document.getElementById("fc").selected;
-    b.color = c;
+    text = select.options[select.selectedIndex].text;
+    b.color = text;
 }
-
 //Change Background color
 //b.backgroundColor = 'purple';
+var textBG = null;
+var selectBG = document.getElementById('bgColor');
+if (selectBG) {
+    selectBG.addEventListener("click", getBG);
+}
+
+function getBG() {
+    textBG = selectBG.options[selectBG.selectedIndex].text;
+    b.backgroundColor = textBG;
+}
+b.backgroundColor = textBG;
